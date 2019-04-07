@@ -83,7 +83,7 @@ router.post('/', uploadHandler, (req, res, next) => {
 
 });
 
-// Updates a monography
+// Updates a single monography
 router.put('/:monographyId', uploadHandler, (req, res, next) => {
     const id = req.params.monographyId;
     Monography.updateOne({ _id: id }, {
